@@ -1,11 +1,16 @@
 import React from "react";
 import Announcement from "../components/Announcement"; // Correct import
+import Navbar from "../components/Navbar";
+import Slider from "../components/Slider";
+import AboutUs from "../components/AboutUs";
 
 function Home() {
   return (
     <div>
       <Announcement />
-      {/* Other homepage content */}
+      <Navbar />
+      <Slider />
+      <AboutUs />
     </div>
   );
 }

@@ -1,0 +1,120 @@
+/* Hide scrollbars */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Slider Container */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Slide Styling */
+.slide {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align text to the left */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  inset: 0;
+}
+
+/* Active Slide */
+.slide.active {
+  opacity: 1;
+}
+
+/* Ensure the active slide is visible */
+.slide.active {
+  opacity: 1;
+}
+
+/* Full-Screen Image */
+.slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover; /* Ensures the full image covers the screen */
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/* Text Overlay */
+.text-overlay {
+  max-width: 50%;
+  color: white;
+  margin-left: 100px;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Main Heading */
+.text-overlay h1 {
+  font-size: 70px;
+  font-weight: 900; /* Extra bold */
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.text-overlay p {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Navigation Buttons */
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .text-overlay {
+    max-width: 80%;
+    margin-left: 30px;
+    padding: 20px;
+  }
+
+  .text-overlay h1 {
+    font-size: 50px;
+  }
+
+  .text-overlay p {
+    font-size: 18px;
+  }
+}
