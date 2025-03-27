@@ -1,0 +1,201 @@
+/* Main Container */
+.mission-vision-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+  gap: 100px;
+  padding-bottom: 100px;
+}
+
+/* Left Side: Text Section */
+.text-section {
+  flex: 1;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50; /* Deep Blue for elegance */
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #666; /* Soft Gray */
+  line-height: 1.6;
+}
+
+.benefits-list ul {
+  list-style: none; /* Remove default bullets */
+  padding: 0;
+}
+
+.benefits-list li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #444; /* Slightly Dark Gray */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+}
+
+/* Custom Icon Styling */
+.benefit-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #2980b9; /* Blue Circle */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Make it a circle */
+}
+
+/* Toggle Sections */
+.toggle-section {
+  margin-top: 20px;
+}
+
+.toggle-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px;
+  background-color: #e3f2fd; /* Light Blue Background */
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+  color: #1565c0; /* Rich Blue */
+}
+
+/* Remove horizontal scrollbar */
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Ensure container fits within viewport */
+.mission-vision-container {
+  max-width: 100%;
+  box-sizing: border-box; /* Prevents overflow due to padding */
+  padding: 50px 50px 50px 50px; /* Adjusted padding to prevent overflow */
+}
+
+/* Ensure image does not overflow */
+.image-container img {
+  width: 80%; /* Increased image width */
+  height: auto;
+  border-radius: 50%; /* Circular shape for elegance */
+  max-width: 100%;
+  display: block;
+  border: 8px solid #2980b9; /* Adds a stylish border */
+}
+
+.toggle-heading:hover {
+  background-color: #bbdefb; /* Slightly Darker Blue */
+  color: #0d47a1; /* Deeper Blue */
+}
+
+.toggle-icon {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.toggle-description {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.5;
+  padding: 15px;
+  background: #f1f8ff; /* Very Light Blue */
+  border-radius: 8px;
+}
+
+/* Right Side: Image Section */
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  width: 700px; /* Increased width */
+  height: 600px; /* Increased height */
+  border-radius: 12px; /* Circular shape */
+  object-fit: cover; /* Ensures the image fills the space */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .mission-vision-container {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; /* Center align text */
+    padding: 30px 15px; /* Reduce padding for small screens */
+    gap: 40px; /* Reduce gap */
+  }
+
+  /* Title Styling */
+  .title {
+    font-size: 2rem; /* Reduce font size */
+  }
+
+  /* Description Styling */
+  .description {
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  /* Benefits List */
+  .benefits-list li {
+    font-size: 1rem;
+    gap: 8px; /* Reduce gap */
+  }
+
+  /* Benefit Icon */
+  .benefit-icon {
+    width: 24px;
+    height: 24px;
+    font-size: 1rem;
+  }
+
+  /* Toggle Section */
+  .toggle-heading {
+    font-size: 1.5rem; /* Smaller font */
+    padding: 12px; /* Adjust padding */
+  }
+
+  .toggle-description {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  /* Image Section */
+  .image-section {
+    margin-top: 20px;
+  }
+
+  .image-section img {
+    width: 90%; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Keep rounded corners */
+  }
+
+  /* Adjust padding to prevent horizontal scrolling */
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+}

@@ -1,0 +1,133 @@
+/* About Us Section */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 10%;
+  background-color: #f8f8f8;
+  min-height: 90vh;
+  width: 100%;
+}
+
+/* Left Side - Text Content */
+.about-text {
+  flex: 1;
+  text-align: left;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Title with Icon */
+.title-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+}
+
+/* Icon Style */
+.title-icon {
+  color: gold; /* Star color */
+  font-size: 30px; /* Adjust size */
+}
+
+/* Main Heading */
+.about-text h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.about-text h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Description */
+.about-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Read More Button */
+.read-more {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #0056b3;
+}
+
+/* Right Side - Image */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 60%;
+  height: auto;
+  border-radius: 10px;
+}
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center;
+    padding: 30px 5%; /* Reduce padding */
+    min-height: auto; /* Adjust height */
+  }
+
+  /* Adjust Text Section */
+  .about-text {
+    max-width: 100%; /* Full width for small screens */
+    text-align: center; /* Center align text */
+  }
+
+  .title-with-icon {
+    justify-content: center; /* Center the title & icon */
+  }
+
+  .about-text h1 {
+    font-size: 40px; /* Reduce size for better fit */
+  }
+
+  .about-text h2 {
+    font-size: 24px; /* Adjust subtitle size */
+  }
+
+  .about-text p {
+    font-size: 18px; /* Adjust text size */
+  }
+
+  .read-more {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+
+  /* Adjust Image Section */
+  .about-image {
+    margin-top: 20px; /* Add spacing between text & image */
+  }
+
+  .about-image img {
+    width: 80%; /* Adjust width for responsiveness */
+    border-radius: 10px;
+  }
+}

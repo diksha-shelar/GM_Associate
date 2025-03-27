@@ -1,0 +1,104 @@
+/* Contact Page Container */
+.contact-container {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f6f6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Background Image Banner */
+.about-banner {
+  position: relative;
+  background-image: url("../assets/slider4.webp"); /* Adjust path to your image */
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.about-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* Company Name Styling */
+.company-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* Subtitle Styling */
+.company-subtitle {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Section Title Styling */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #007bff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Contact Item - Center Alignment */
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Icons Styling - Centered */
+.contact-icons {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* Contact Title Styling */
+.contact-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+/* Contact Text Styling */
+.contact-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}

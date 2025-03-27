@@ -1,0 +1,39 @@
+.completed-content {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+  text-align: left;
+}
+
+.completed-content h2 {
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: 5px; /* Reduce bottom margin to lessen space */
+  color: #007bff;
+}
+
+.completed-content p {
+  font-size: 1.2rem;
+  color: #282727;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .completed-content {
+    width: 95%; /* Increase width to use more screen space */
+    padding: 15px 0; /* Reduce padding for better spacing */
+    text-align: center; /* Center align text for better readability */
+  }
+
+  .completed-content h2 {
+    font-size: 1.8rem; /* Adjust heading size */
+    margin-top: 8px; /* Reduce top margin */
+    margin-bottom: 4px; /* Adjust bottom margin */
+  }
+
+  .completed-content p {
+    font-size: 1rem; /* Adjust paragraph text size */
+    line-height: 1.5; /* Slightly reduce line height */
+    margin-bottom: 15px; /* Adjust margin for better spacing */
+  }
+}

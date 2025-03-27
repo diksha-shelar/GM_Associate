@@ -1,0 +1,209 @@
+/* Full-Page Layout */
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px; /* Increased top padding */
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  box-sizing: border-box;
+}
+
+/* Left Section: Form */
+.form-section {
+  flex: 1;
+}
+
+.form-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.form-subtitle {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  flex: 1;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.textarea-field {
+  width: 100%;
+  height: 120px; /* More space for message */
+  padding: 15px;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  background-color: #2980b9;
+  color: white;
+  padding: 15px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #1c5a8a;
+}
+
+/* Middle Section: Contact Info (Centered with Email Below Office) */
+.meet-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.info-block {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 35px;
+  margin-top: 50px;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Custom Icon Styling with Dark Red Gradient */
+.custom-icon {
+  font-size: 3rem;
+  background: linear-gradient(45deg, #8b0000, #b22222); /* Dark Red Gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Right Section: Image */
+.image-section-form {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-section-form img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 6px 20px rgba(3, 3, 3, 0.2);
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center;
+    padding: 50px 20px; /* Reduce padding */
+    height: auto; /* Remove fixed height */
+  }
+
+  /* Title & Subtitle */
+  .form-title {
+    font-size: 2rem; /* Reduce font size */
+  }
+
+  .form-subtitle {
+    font-size: 1.2rem;
+  }
+
+  /* Contact Form */
+  .contact-form {
+    width: 100%;
+  }
+
+  .form-group {
+    flex-direction: column; /* Stack inputs */
+    gap: 15px; /* Adjust spacing */
+  }
+
+  .input-field,
+  .textarea-field {
+    font-size: 1rem; /* Adjust font size */
+    padding: 12px;
+    width: 100%;
+  }
+
+  /* Submit Button */
+  .submit-btn {
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+
+  /* Contact Info */
+  .meet-info {
+    margin-top: 30px;
+  }
+
+  .info-block {
+    flex-direction: column; /* Stack contact details */
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  /* Icon */
+  .custom-icon {
+    font-size: 2.5rem;
+  }
+
+  /* Adjust Image Section */
+  .image-section-form {
+    margin-top: 30px;
+  }
+
+  .image-section-form img {
+    max-width: 100%;
+    width: 90%; /* Reduce width for better fit */
+    clip-path: none; /* Remove polygon clipping on mobile */
+    border-radius: 10px;
+  }
+}

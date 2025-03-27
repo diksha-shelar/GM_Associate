@@ -1,0 +1,223 @@
+/* Global Styles - Prevent Horizontal and Vertical Scrolling */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: relative;
+  /* top: 40px;
+  z-index: 888;
+  position: fixed; */
+}
+
+/* Logo Container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Logo Image */
+.logo {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Company Name Text */
+.company-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Navbar Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+/* Hide navbar in mobile & add a toggle button */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Nav Links Styling */
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+/* Dropdown Styling */
+.dropdown {
+  position: relative;
+}
+
+/* Show dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  min-width: 150px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu.show {
+  display: block;
+}
+
+/* Dropdown Items */
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: black;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: lightgray;
+  color: #072c55;
+}
+
+/* Contact Link */
+.contact a {
+  background: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #007bff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: row; /* Keep logo and menu button in a row */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    position: relative;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .company-name {
+    font-size: 18px; /* Adjusted font size */
+  }
+
+  .logo {
+    height: 60px; /* Smaller logo for mobile */
+  }
+
+  /* Menu Icon (Hamburger) */
+  .menu-icon {
+    display: block;
+    font-size: 28px; /* Larger for better tapability */
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+    z-index: 1000;
+  }
+
+  /* Mobile Nav Links - Hidden by Default */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  /* Show Navbar when Menu is Clicked */
+  .nav-links.show {
+    display: flex;
+  }
+
+  /* Style Each Nav Item */
+  .nav-links li {
+    text-align: center;
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    padding: 12px 20px;
+    display: block;
+    color: black;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: #007bff;
+  }
+
+  /* Dropdown Styling for Mobile */
+  .dropdown-menu {
+    position: relative;
+    background: none;
+    box-shadow: none;
+    display: none; /* Hide dropdown initially */
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+  }
+
+  .dropdown-menu a {
+    padding-left: 30px; /* Indent dropdown items */
+    display: block;
+  }
+}

@@ -1,0 +1,38 @@
+.ongoing-content {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+  text-align: left;
+}
+
+.ongoing-content h2 {
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: 5px; /* Reduced space between h2 and p */
+  color: #007bff;
+}
+
+.ongoing-content p {
+  font-size: 1.2rem;
+  color: #282727;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .ongoing-content {
+    width: 90%; /* Increase width for better mobile fit */
+    padding: 15px 10px; /* Adjust padding */
+  }
+
+  .ongoing-content h2 {
+    font-size: 1.8rem; /* Slightly reduce font size */
+    margin-top: 5px; /* Adjust spacing */
+    margin-bottom: 8px;
+  }
+
+  .ongoing-content p {
+    font-size: 1.1rem; /* Slightly reduce paragraph font size */
+    line-height: 1.5; /* Adjust line height */
+    margin-bottom: 15px; /* Reduce spacing */
+  }
+}

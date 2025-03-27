@@ -1,0 +1,172 @@
+/* Full-Screen Container */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Changed from height to min-height */
+  padding: 80px 20px 20px;
+  box-sizing: border-box;
+  background-color: #f1eeee;
+}
+
+/* Title Styling */
+.projects-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Description Styling */
+.projects-description {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #515151;
+  margin-bottom: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+/* 3x2 Grid Layout - Centered */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Equal Size Project Items */
+.projects-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  width: 400px; /* Adjusted size */
+  height: 350px; /* Adjusted size */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Image Styling */
+.projects-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+/* Hover Effect: Blur & Scale */
+.projects-item:hover .projects-image {
+  filter: blur(3px);
+  transform: scale(1.1);
+}
+
+/* Overlay for Text */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateY(20px);
+}
+
+.projects-item:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Heading Styling in Overlay */
+.projects-text h3 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* Description Styling in Overlay */
+.projects-text p {
+  color: #ddd;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  max-width: 90%;
+  line-height: 1.4;
+}
+
+/* Button Styling */
+.projects-button {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover & Active Effects */
+.projects-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.projects-button:active {
+  transform: scale(0.98);
+}
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 50px 15px; /* Reduce padding for better fit */
+  }
+
+  .projects-title {
+    font-size: 2.5rem; /* Adjust title size */
+    text-align: center;
+  }
+
+  .projects-description {
+    font-size: 1.5rem; /* Slightly smaller text */
+    margin-bottom: 15px;
+  }
+
+  /* Stack projects in a single column */
+  .projects-grid {
+    grid-template-columns: 1fr; /* Single-column layout */
+    grid-template-rows: auto; /* Adjust rows based on content */
+    gap: 15px; /* Reduce gap for better spacing */
+    max-width: 100%;
+  }
+
+  .projects-item {
+    width: 100%; /* Full width for mobile */
+    height: 280px; /* Adjust height */
+  }
+
+  .projects-text h3 {
+    font-size: 1.5rem; /* Adjust text size */
+  }
+
+  .projects-text p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+    max-width: 95%;
+  }
+
+  .projects-button {
+    font-size: 1rem; /* Slightly smaller button */
+    padding: 10px 20px;
+  }
+}

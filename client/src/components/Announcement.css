@@ -1,0 +1,96 @@
+.announcement {
+  background-color: #b3daff; /* Red background */
+  color: black;
+  padding: 10px 20px; /* Adjusted padding */
+  display: flex;
+  justify-content: space-between; /* Even spacing between items */
+  align-items: center;
+  font-size: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 20px;
+  /* position: fixed;
+  z-index: 1000;
+  width: 100%; */
+}
+
+/* Contact info and social icons will take equal space */
+.contact-info,
+.social-icons {
+  flex: 1; /* Equal flex growth */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content */
+  gap: 15px; /* Adjusted gap for better spacing */
+}
+
+.contact-info a {
+  color: black; /* White text */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  gap: 20px; /* Even spacing between icons */
+}
+
+.icon {
+  font-size: 25px;
+  color: black; /* Default white color for all icons */
+  transition: color 0.3s ease;
+}
+
+.icon.phone {
+  color: white; /* Explicitly set phone icon to white */
+}
+
+.icon.facebook:hover {
+  color: #ffebee; /* Light red */
+}
+
+.icon.instagram:hover {
+  color: #ffccbc; /* Soft white */
+}
+
+.icon.linkedin:hover {
+  color: #ffb3b3; /* Light red */
+}
+.icon.twitter:hover {
+  color: #ffb3b3; /* Light red */
+}
+
+@media (max-width: 768px) {
+  .announcement {
+    flex-direction: row; /* Keep items in a row */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    justify-content: center; /* Center items */
+    text-align: center;
+    padding: 10px 15px;
+    gap: 10px; /* Reduce gap */
+  }
+
+  /* Adjust Contact Info */
+  .contact-info {
+    flex: 1; /* Take full width */
+    justify-content: flex-start; /* Align left */
+    font-size: 16px; /* Reduce font size */
+  }
+
+  .contact-info a {
+    font-size: 16px; /* Adjust text size */
+  }
+
+  /* Adjust Social Icons */
+  .social-icons {
+    flex: 1; /* Take full width */
+    justify-content: flex-end; /* Align right */
+  }
+
+  .icon {
+    font-size: 22px; /* Reduce icon size */
+    padding: 5px; /* Add space around icons */
+  }
+}
