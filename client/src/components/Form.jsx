@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./form.css";
 import { FaBuilding, FaEnvelope } from "react-icons/fa";
 import formImg from "../assets/constructor.webp";
+const apiUrl = process.env.REACT_APP_API_URL;
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -25,14 +26,11 @@ const Form = () => {
     setStatus("Submitting...");
 
     try {
-      const response = await fetch(
-        "https://gm-associate-1.onrender.com/api/contact/saveinfo",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
-        }
-      );
+      const response = await fetch(`${apiUrl}/api/contact/saveinfo`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
       const result = await response.json();
 
