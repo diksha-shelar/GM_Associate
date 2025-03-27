@@ -26,7 +26,7 @@ const Form = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/contact/saveinfo",
+        "https://gm-associate-1.onrender.com/api/contact/saveinfo",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
