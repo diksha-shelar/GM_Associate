@@ -121,7 +121,7 @@ const Form = () => {
           <FaBuilding className="custom-icon" />
           <div>
             <h3>Office</h3>
-            <p>123 Business St, New York, NY</p>
+            <p>123 Business tower, Khutwad Nagar Nashik</p>
           </div>
         </div>
 
@@ -129,7 +129,7 @@ const Form = () => {
           <FaEnvelope className="custom-icon" />
           <div>
             <h3>Email Us</h3>
-            <p>contact@yourbusiness.com</p>
+            <p>contact-info@gmassociate.com</p>
           </div>
         </div>
       </div>

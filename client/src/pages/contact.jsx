@@ -23,8 +23,8 @@ const Contact = () => {
           <div>
             <h4 className="contact-title">Address:</h4>
             <p className="contact-text">
-              123, Business Avenue, Near Landmark Tower, <br />
-              Pune, Maharashtra, India - 411001
+              123, Business Avenue, Near Khutwad Nagar, <br />
+              Nashik, Maharashtra, India - 411001
             </p>
           </div>
         </div>

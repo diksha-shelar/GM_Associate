@@ -65,11 +65,11 @@ const Footer = () => {
         <div className="footer-center">
           <h3>CONTACT INFO</h3>
           <p>
-            <FaMapMarkerAlt className="contact-icon" /> Office Address, City,
+            <FaMapMarkerAlt className="contact-icon" /> Khutwad Nagar Nashik ,
             Country
           </p>
           <p>
-            <FaEnvelope className="contact-icon" /> info@gmbuilders.com
+            <FaEnvelope className="contact-icon" /> info@gmassociate.com
           </p>
         </div>
 
