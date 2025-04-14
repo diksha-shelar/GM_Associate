@@ -13,8 +13,8 @@ const Announcement = () => {
     <div className="announcement">
       {/* Contact Details */}
       <div className="contact-info">
-        📧 Email: <a href="mailto:info@gmassociate.com">info@gmassociate.com</a>{" "}
-        | <FaPhone className="icon phone" />{" "}
+        Email: <a href="mailto:info@gmassociate.com">info@gmassociate.com</a> |{" "}
+        <FaPhone className="icon phone" />{" "}
         <a href="tel:+1234567890">9607311112</a>
       </div>
 

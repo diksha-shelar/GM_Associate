@@ -82,7 +82,7 @@
   }
 
   .social-icons {
-    gap: 10px;
+    gap: 8px;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
