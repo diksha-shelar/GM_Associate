@@ -61,20 +61,20 @@
 .icon.twitter:hover {
   color: #ffb3b3;
 }
-
 @media (max-width: 600px) {
   .announcement {
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding: 4px 16px;
+    font-size: 13px;
+    flex-wrap: nowrap;
+    gap: 8px;
     justify-content: center;
-    text-align: center;
-    padding: 10px 15px;
-    gap: 10px;
   }
 
   .contact-info {
-    justify-content: flex-start;
-    font-size: 16px;
+    gap: 8px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
   }
 
   .contact-info a {
@@ -82,12 +82,13 @@
   }
 
   .social-icons {
-    flex: 1;
-    justify-content: flex-end;
+    gap: 10px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
   }
 
   .icon {
-    font-size: 22px;
-    padding: 5px;
+    font-size: 16px;
   }
 }

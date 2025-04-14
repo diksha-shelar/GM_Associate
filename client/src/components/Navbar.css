@@ -123,36 +123,39 @@ html {
 /* Responsive Design */
 @media screen and (max-width: 600px) {
   .navbar {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 5px;
+    padding: 5px 10px;
     height: 60px;
     position: relative;
+    background-color: white; /* optional: ensures contrast */
+    z-index: 1000;
   }
 
   .logo-container {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
   }
 
   .company-name {
-    font-size: 10px;
-    font-weight: 300;
+    font-size: 9px;
+    font-weight: 400;
     white-space: nowrap;
   }
 
   .logo {
-    height: 45px;
+    height: 40px;
   }
 
   .menu-icon {
-    display: block;
-    font-size: 24px;
+    display: block !important;
+    font-size: 20px;
     cursor: pointer;
-    padding: 5px;
-    z-index: 1000;
+    z-index: 1001;
+    color: black;
   }
 
   .nav-links {
@@ -161,7 +164,7 @@ html {
     width: 100%;
     background: white;
     position: absolute;
-    top: 100%;
+    top: 60px;
     left: 0;
     padding: 10px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -179,7 +182,7 @@ html {
   }
 
   .nav-links a {
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px 20px;
     display: block;
     color: black;
@@ -191,10 +194,10 @@ html {
   }
 
   .dropdown-menu {
+    display: none;
     position: relative;
     background: none;
     box-shadow: none;
-    display: none;
   }
 
   .dropdown:hover .dropdown-menu {
