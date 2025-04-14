@@ -121,46 +121,38 @@ html {
 }
 
 /* Responsive Design */
-@media screen and (min-width: 280px) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .navbar {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 6px 12px;
+    padding: 5px 5px;
     height: 60px;
-    background-color: white;
     position: relative;
-    z-index: 1000;
   }
 
   .logo-container {
     display: flex;
     align-items: center;
-    gap: 8px;
-  }
-
-  .logo {
-    height: 34px;
-    width: auto;
+    gap: 6px;
   }
 
   .company-name {
-    font-size: 8px;
-    font-weight: 400;
+    font-size: 10px;
+    font-weight: 300;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 85px;
+  }
+
+  .logo {
+    height: 45px;
   }
 
   .menu-icon {
-    display: block !important;
-    font-size: 22px;
+    display: block;
+    font-size: 24px;
     cursor: pointer;
-    padding: 6px;
-    z-index: 1001;
-    color: black;
+    padding: 5px;
+    z-index: 1000;
   }
 
   .nav-links {
@@ -169,7 +161,7 @@ html {
     width: 100%;
     background: white;
     position: absolute;
-    top: 60px;
+    top: 100%;
     left: 0;
     padding: 10px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -187,7 +179,7 @@ html {
   }
 
   .nav-links a {
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px 20px;
     display: block;
     color: black;
@@ -199,10 +191,10 @@ html {
   }
 
   .dropdown-menu {
-    display: none;
     position: relative;
     background: none;
     box-shadow: none;
+    display: none;
   }
 
   .dropdown:hover .dropdown-menu {
