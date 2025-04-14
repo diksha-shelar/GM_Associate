@@ -8,7 +8,7 @@
 .completed-content h2 {
   font-size: 2rem;
   margin-top: 10px;
-  margin-bottom: 5px; /* Reduce bottom margin to lessen space */
+  margin-bottom: 5px;
   color: #007bff;
 }
 
@@ -18,22 +18,22 @@
   line-height: 1.6;
   margin-bottom: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .completed-content {
-    width: 95%; /* Increase width to use more screen space */
-    padding: 15px 0; /* Reduce padding for better spacing */
-    text-align: center; /* Center align text for better readability */
+    width: 95%;
+    padding: 15px 0;
+    text-align: center;
   }
 
   .completed-content h2 {
-    font-size: 1.8rem; /* Adjust heading size */
-    margin-top: 8px; /* Reduce top margin */
-    margin-bottom: 4px; /* Adjust bottom margin */
+    font-size: 1.8rem;
+    margin-top: 8px;
+    margin-bottom: 4px;
   }
 
   .completed-content p {
-    font-size: 1rem; /* Adjust paragraph text size */
-    line-height: 1.5; /* Slightly reduce line height */
-    margin-bottom: 15px; /* Adjust margin for better spacing */
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
   }
 }

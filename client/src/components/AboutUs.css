@@ -23,13 +23,13 @@
 .title-with-icon {
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between icon and text */
+  gap: 10px;
 }
 
 /* Icon Style */
 .title-icon {
-  color: gold; /* Star color */
-  font-size: 30px; /* Adjust size */
+  color: gold;
+  font-size: 30px;
 }
 
 /* Main Heading */
@@ -54,7 +54,7 @@
   color: #444;
 }
 
-/* Read More Button */
+/* Button */
 .read-more {
   margin-top: 20px;
   padding: 15px 30px;
@@ -72,7 +72,7 @@
   background-color: #0056b3;
 }
 
-/* Right Side - Image */
+/* Image */
 .about-image {
   flex: 1;
   display: flex;
@@ -85,49 +85,50 @@
   height: auto;
   border-radius: 10px;
 }
+
 /* Responsive Design for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .about-container {
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     text-align: center;
-    padding: 30px 5%; /* Reduce padding */
-    min-height: auto; /* Adjust height */
+    padding: 30px 8px;
+    min-height: auto;
   }
 
-  /* Adjust Text Section */
+  /* text */
   .about-text {
-    max-width: 100%; /* Full width for small screens */
-    text-align: center; /* Center align text */
+    max-width: 83%;
+    text-align: center;
   }
 
   .title-with-icon {
-    justify-content: center; /* Center the title & icon */
+    justify-content: center;
   }
 
   .about-text h1 {
-    font-size: 40px; /* Reduce size for better fit */
+    font-size: 40px;
   }
 
   .about-text h2 {
-    font-size: 24px; /* Adjust subtitle size */
+    font-size: 24px;
   }
 
   .about-text p {
-    font-size: 18px; /* Adjust text size */
+    font-size: 18px;
   }
 
   .read-more {
     font-size: 18px;
-    padding: 12px 25px;
+    padding: 10px 15px;
   }
 
-  /* Adjust Image Section */
+  /* image */
   .about-image {
-    margin-top: 20px; /* Add spacing between text & image */
+    margin-top: 20px;
   }
 
   .about-image img {
-    width: 80%; /* Adjust width for responsiveness */
+    width: 80%;
     border-radius: 10px;
   }
 }

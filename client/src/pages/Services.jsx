@@ -1,18 +1,17 @@
 import React from "react";
 import "./services.css";
-import Navbar from "../components/Navbar"; // Adjust path as needed
-import Announcement from "../components/Announcement"; // Adjust path as needed
-import Footer from "../components/Footer"; // Adjust path as needed
+import Navbar from "../components/Navbar";
+import Announcement from "../components/Announcement";
+import Footer from "../components/Footer";
 
-// Import images directly
 import image2 from "../assets/images2.webp";
 import image3 from "../assets/images3.webp";
 import image4 from "../assets/images4.webp";
 import image5 from "../assets/images5.webp";
 import image6 from "../assets/images6.webp";
 import image7 from "../assets/images7.webp";
-import image8 from "../assets/images7 (1).webp"; // Ensure correct path
-import image9 from "../assets/images8.webp"; // Ensure correct path
+import image8 from "../assets/images7 (1).webp";
+import image9 from "../assets/images8.webp";
 
 const services = [
   { name: "Commercial Space", image: image2 },
@@ -21,8 +20,8 @@ const services = [
   { name: "Healthcare Facility Construction", image: image5 },
   { name: "Bungalow", image: image6 },
   { name: "Landscape Planning", image: image7 },
-  { name: "Row-House", image: image8 }, // Added new image
-  { name: "Residential+Commercial", image: image9 }, // Added new image
+  { name: "Row-House", image: image8 },
+  { name: "Residential+Commercial", image: image9 },
 ];
 
 const Service = () => {

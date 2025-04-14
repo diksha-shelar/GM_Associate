@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Home from "./pages/Home"; // Homepage component
-import About from "./pages/About"; // About Us page component
-import Services from "./pages/Services"; // Services page component
-import Completed from "./pages/completed"; // Completed Projects page component
-import Ongoing from "./pages/Ongoing"; // Ongoing Projects page component
-import Gallery from "./pages/Gallery"; // Gallery page component
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Completed from "./pages/completed";
+import Ongoing from "./pages/Ongoing";
+import Gallery from "./pages/Gallery";
 import Contact from "./pages/contact";
 
 function App() {

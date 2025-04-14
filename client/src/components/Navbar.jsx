@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Import React Router Link
-import { FaChevronDown, FaBars } from "react-icons/fa"; // Import dropdown + menu icon
+import { Link } from "react-router-dom";
+import { FaChevronDown, FaBars } from "react-icons/fa";
 import "./Navbar.css";
-import logo from "../assets/logo new.png"; // Importing the logo
+import logo from "../assets/logo new.png";
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false); // Mobile menu state
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className="navbar">
@@ -38,7 +38,7 @@ const Navbar = () => {
           </span>
           <ul className={`dropdown-menu ${dropdown ? "show" : ""}`}>
             <li>
-              <Link to="/completed">Completed</Link> {/* ✅ Fixed path */}
+              <Link to="/completed">Completed</Link>
             </li>
             <li>
               <Link to="/ongoing">Ongoing</Link>

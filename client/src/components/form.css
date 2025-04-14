@@ -1,15 +1,13 @@
-/* Full-Page Layout */
 .form-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 100px; /* Increased top padding */
-  width: 100vw; /* Full width */
-  height: 100vh; /* Full height */
+  padding: 80px 100px;
+  width: 100vw;
+  height: 100vh;
   box-sizing: border-box;
 }
 
-/* Left Section: Form */
 .form-section {
   flex: 1;
 }
@@ -50,7 +48,7 @@
 
 .textarea-field {
   width: 100%;
-  height: 120px; /* More space for message */
+  height: 120px;
   padding: 15px;
   font-size: 1.2rem;
   border: 2px solid #ccc;
@@ -75,7 +73,6 @@
   background-color: #1c5a8a;
 }
 
-/* Middle Section: Contact Info (Centered with Email Below Office) */
 .meet-info {
   flex: 1;
   display: flex;
@@ -94,10 +91,9 @@
   justify-content: center;
 }
 
-/* Custom Icon Styling with Dark Red Gradient */
 .custom-icon {
   font-size: 3rem;
-  background: linear-gradient(45deg, #8b0000, #b22222); /* Dark Red Gradient */
+  background: linear-gradient(45deg, #8b0000, #b22222);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -113,7 +109,6 @@ p {
   margin: 5px 0;
 }
 
-/* Right Section: Image */
 .image-section-form {
   flex: 1;
   display: flex;
@@ -141,69 +136,63 @@ p {
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
   .form-container {
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     text-align: center;
-    padding: 50px 20px; /* Reduce padding */
-    height: auto; /* Remove fixed height */
+    padding: 50px 20px;
+    height: auto;
   }
 
-  /* Title & Subtitle */
   .form-title {
-    font-size: 2rem; /* Reduce font size */
+    font-size: 2rem;
   }
 
   .form-subtitle {
     font-size: 1.2rem;
   }
 
-  /* Contact Form */
   .contact-form {
     width: 100%;
   }
 
   .form-group {
-    flex-direction: column; /* Stack inputs */
-    gap: 15px; /* Adjust spacing */
+    flex-direction: column;
+    gap: 15px;
   }
 
   .input-field,
   .textarea-field {
-    font-size: 1rem; /* Adjust font size */
+    font-size: 1rem;
     padding: 12px;
     width: 100%;
   }
 
-  /* Submit Button */
   .submit-btn {
     font-size: 1.2rem;
     padding: 12px;
   }
 
-  /* Contact Info */
   .meet-info {
     margin-top: 30px;
   }
 
   .info-block {
-    flex-direction: column; /* Stack contact details */
+    flex-direction: column;
     gap: 15px;
     margin-bottom: 25px;
   }
 
-  /* Icon */
   .custom-icon {
     font-size: 2.5rem;
   }
 
-  /* Adjust Image Section */
   .image-section-form {
     margin-top: 30px;
   }
 
   .image-section-form img {
     max-width: 100%;
-    width: 90%; /* Reduce width for better fit */
-    clip-path: none; /* Remove polygon clipping on mobile */
+    width: 90%;
+    clip-path: none;
     border-radius: 10px;
   }
 }

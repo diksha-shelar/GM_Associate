@@ -12,19 +12,16 @@ const images = [slider1, slider2, slider3, slider4];
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Move to the next image
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  // Move to the previous image
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
 
-  // Auto-slide every 5 seconds
   useEffect(() => {
     const interval = setInterval(nextSlide, 5000);
     return () => clearInterval(interval);
@@ -37,7 +34,6 @@ const Slider = () => {
           key={index}
           className={`slide ${index === currentIndex ? "active" : ""}`}
           style={{ backgroundImage: `url(${img})` }}>
-          {/* Text Overlay (Left Side) */}
           {index === currentIndex && (
             <div className="text-overlay">
               <h1>We Build Your Dream</h1>
@@ -50,7 +46,6 @@ const Slider = () => {
         </div>
       ))}
 
-      {/* Navigation Arrows */}
       <button className="left-arrow" onClick={prevSlide}>
         <FaArrowLeft />
       </button>

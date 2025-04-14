@@ -1,5 +1,5 @@
 import React from "react";
-import Announcement from "../components/Announcement"; // Correct import
+import Announcement from "../components/Announcement";
 import Navbar from "../components/Navbar";
 import Slider from "../components/Slider";
 import AboutUs from "../components/AboutUs";

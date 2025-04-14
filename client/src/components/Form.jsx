@@ -15,12 +15,10 @@ const Form = () => {
 
   const [status, setStatus] = useState("");
 
-  // ✅ Handle Input Change
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // ✅ Handle Form Submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Submitting...");
@@ -35,7 +33,7 @@ const Form = () => {
       const result = await response.json();
 
       if (response.ok) {
-        setStatus("✅ Form submitted successfully!");
+        setStatus(" Form submitted successfully!");
         setFormData({
           name: "",
           email: "",
@@ -44,11 +42,11 @@ const Form = () => {
           message: "",
         });
       } else {
-        setStatus(`❌ Error: ${result.error}`);
+        setStatus(` Error: ${result.error}`);
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      setStatus("❌ Server error. Try again later.");
+      setStatus(" Server error. Try again later.");
     }
   };
 
@@ -114,7 +112,7 @@ const Form = () => {
           </button>
         </form>
 
-        {/* ✅ Show Status Message */}
+        {/* Show Status Message */}
         {status && <p className="status-message">{status}</p>}
       </div>
 

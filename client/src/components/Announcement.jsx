@@ -6,7 +6,7 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
-import "./Announcement.css"; // Importing CSS file
+import "./Announcement.css";
 
 const Announcement = () => {
   return (
@@ -38,10 +38,7 @@ const Announcement = () => {
           rel="noopener noreferrer">
           <FaLinkedin className="icon linkedin" />
         </a>
-        <a
-          href="https://twitter.com" // Replace with the correct Twitter handle
-          target="_blank"
-          rel="noopener noreferrer">
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
           <FaTwitter className="icon twitter" />
         </a>
       </div>

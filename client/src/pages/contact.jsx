@@ -1,9 +1,9 @@
 import React from "react";
-import "./contact.css"; // Ensure correct path
-import Navbar from "../components/Navbar"; // Adjust path as needed
-import Announcement from "../components/Announcement"; // Adjust path as needed
-import Footer from "../components/Footer"; // Adjust path as needed
-import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa"; // Import icons
+import "./contact.css";
+import Navbar from "../components/Navbar";
+import Announcement from "../components/Announcement";
+import Footer from "../components/Footer";
+import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -13,14 +13,11 @@ const Contact = () => {
       <div className="about-banner">Contact Us</div>
 
       <div className="contact-container">
-        {/* Company Name */}
         <h1 className="company-name">GM Associate Builders and Developers</h1>
         <h3 className="company-subtitle">Gajare & Matale</h3>
 
-        {/* Corporate Office Section */}
         <h2 className="section-title">The Corporate Office</h2>
 
-        {/* Address Section */}
         <div className="contact-item">
           <FaMapMarkerAlt className="contact-icons" />
           <div>
@@ -32,7 +29,6 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Email Section */}
         <div className="contact-item">
           <FaEnvelope className="contact-icons" />
           <div>
@@ -41,7 +37,6 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Phone Section */}
         <div className="contact-item">
           <FaPhone className="contact-icons" />
           <div>

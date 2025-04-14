@@ -1,8 +1,8 @@
 import React from "react";
-import "./about.css"; // Ensure the path is correct based on your folder structure
-import Navbar from "../components/Navbar"; // Adjust path as needed
-import Announcement from "../components/Announcement"; // Adjust path as needed
-import Footer from "../components/Footer"; // Adjust path as needed
+import "./about.css";
+import Navbar from "../components/Navbar";
+import Announcement from "../components/Announcement";
+import Footer from "../components/Footer";
 
 const About = () => {
   return (
@@ -11,7 +11,6 @@ const About = () => {
       <Navbar />
       <div className="about-banner">About Us</div>
 
-      {/* About Description, Mission, and Vision */}
       <div className="about-content">
         <div>
           <p>

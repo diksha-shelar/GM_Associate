@@ -1,8 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom";
 import "./Projects.css";
 
-// Import images
 import project1 from "../assets/project1.webp";
 import project2 from "../assets/project2.webp";
 import project3 from "../assets/project3.webp";
@@ -53,7 +52,7 @@ const projects = [
 ];
 
 const Projects = () => {
-  const navigate = useNavigate(); // Hook for navigation
+  const navigate = useNavigate();
 
   return (
     <div className="projects-container">
@@ -81,7 +80,6 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* Button to Navigate to Completed Projects Page */}
       <button
         className="projects-button"
         onClick={() => navigate("/completed")}>

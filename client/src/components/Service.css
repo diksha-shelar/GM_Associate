@@ -4,14 +4,12 @@
   background-color: #f1eeee;
 }
 
-/* Title Styling */
 .service-title {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-/* Description Styling */
 .service-description {
   font-size: 1.5rem;
   font-weight: bold;
@@ -19,29 +17,26 @@
   margin-bottom: 30px;
 }
 
-/* 3x2 Grid Layout - Centered */
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-  grid-template-rows: repeat(2, 1fr); /* 2 equal rows */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 20px;
   justify-content: center;
   align-items: center;
-  max-width: 900px; /* Keeps grid centered */
-  margin: 0 auto; /* Centers grid on the page */
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-/* Equal Size Service Items */
 .service-item {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  width: 450px; /* Smaller width */
-  height: 400px; /* Smaller height */
+  width: 450px;
+  height: 400px;
   transition: transform 0.3s ease-in-out;
 }
 
-/* Image Styling */
 .service-image {
   width: 100%;
   height: 100%;
@@ -50,13 +45,11 @@
   transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 
-/* Hover Effect: Blur & Swipe */
 .service-item:hover .service-image {
   filter: blur(4px);
-  transform: translateX(10px); /* Swipe animation */
+  transform: translateX(10px);
 }
 
-/* Overlay for Text */
 .overlay {
   position: absolute;
   bottom: 0;
@@ -74,7 +67,6 @@
   opacity: 1;
 }
 
-/* Bigger & Bolder Text */
 .service-text {
   color: white;
   font-size: 1.4rem;
@@ -82,71 +74,68 @@
   text-align: center;
 }
 
-/* Button Styling */
 .service-button {
   margin-top: 30px;
   padding: 14px 28px;
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
-  background-color: #007bff; /* Blue color */
+  background-color: #007bff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
-/* Hover & Active Effects */
 .service-button:hover {
-  background-color: #0056b3; /* Darker blue */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
 .service-button:active {
-  transform: scale(0.98); /* Click effect */
+  transform: scale(0.98);
 }
 /* Responsive Design for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .service-container {
-    padding: 30px 20px; /* Reduce padding for small screens */
+    padding: 30px 20px;
   }
 
   .service-title {
-    font-size: 2rem; /* Adjust title size */
+    font-size: 2rem;
   }
 
   .service-description {
-    font-size: 1.3rem; /* Slightly smaller text */
+    font-size: 1.3rem;
   }
 
-  /* Stack services in a single column */
   .service-grid {
-    grid-template-columns: 1fr; /* Single-column layout */
-    grid-template-rows: auto; /* Adjust rows based on content */
-    gap: 15px; /* Reduce gap for spacing */
-    max-width: 100%; /* Full width */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+    max-width: 100%;
   }
 
   .service-item {
-    width: 100%; /* Full width for better fit */
-    height: 300px; /* Adjust height */
+    width: 100%;
+    height: 300px;
   }
 
   .service-text {
-    font-size: 1.2rem; /* Adjust text size for mobile */
+    font-size: 1.2rem;
   }
 
   .service-button {
-    font-size: 1rem; /* Slightly smaller button */
+    font-size: 1rem;
     padding: 12px 24px;
   }
 }
-/* Hover & Active Effects */
+
 .service-button:hover {
-  background-color: #0056b3; /* Darker blue */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
 .service-button:active {
-  transform: scale(0.98); /* Click effect */
+  transform: scale(0.98);
 }

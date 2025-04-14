@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import "./gallery.css"; // Ensure the path is correct
-import Navbar from "../components/Navbar"; // Adjust path as needed
-import Announcement from "../components/Announcement"; // Adjust path as needed
-import Footer from "../components/Footer"; // Adjust path as needed
-import { FaSearchPlus } from "react-icons/fa"; // Import zoom icon
+import "./gallery.css";
+import Navbar from "../components/Navbar";
+import Announcement from "../components/Announcement";
+import Footer from "../components/Footer";
+import { FaSearchPlus } from "react-icons/fa";
 
-// Import images directly
 import image1 from "../assets/Gallery1.webp";
 import image2 from "../assets/Gallery2.webp";
 import image3 from "../assets/Gallery3.webp";

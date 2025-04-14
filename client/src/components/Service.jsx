@@ -1,8 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom"; //
 import "./Service.css";
 
-// Import images
 import image2 from "../assets/images2.webp";
 import image3 from "../assets/images3.webp";
 import image4 from "../assets/images4.webp";
@@ -20,7 +19,7 @@ const services = [
 ];
 
 const Service = () => {
-  const navigate = useNavigate(); // Hook for navigation
+  const navigate = useNavigate();
 
   return (
     <div className="service-container">
@@ -45,7 +44,6 @@ const Service = () => {
         ))}
       </div>
 
-      {/* Button to Navigate to Services Page */}
       <button className="service-button" onClick={() => navigate("/services")}>
         View More
       </button>

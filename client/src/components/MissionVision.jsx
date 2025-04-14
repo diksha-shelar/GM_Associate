@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./MissionVision.css";
 
-// Import image
 import missionImage from "../assets/images.webp";
 
 const MissionVision = () => {

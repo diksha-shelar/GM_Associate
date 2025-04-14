@@ -1,8 +1,8 @@
 import React from "react";
-import "./completed.css"; // Ensure the path is correct based on your folder structure
-import Navbar from "../components/Navbar"; // Adjust path as needed
-import Announcement from "../components/Announcement"; // Adjust path as needed
-import Footer from "../components/Footer"; // Adjust path as needed
+import "./completed.css";
+import Navbar from "../components/Navbar";
+import Announcement from "../components/Announcement";
+import Footer from "../components/Footer";
 
 const Completed = () => {
   return (
@@ -11,7 +11,6 @@ const Completed = () => {
       <Navbar />
       <div className="about-banner">Completed Projects</div>
 
-      {/* Completed Projects Section */}
       <div className="completed-content">
         <h2>Shri Laksmi Blossom</h2>
         <p>
